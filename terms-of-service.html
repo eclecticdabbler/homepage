@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - Eclectic Dabbler Integrations</title>
+    
+    <!-- 
+        Eclectic Dabbler Integrations Terms of Service
+        Version: 2025-02-04
+    -->
+    
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --green: #7eff9e;
+            --yellowish: #f9dc4a;
+            --text-gray: #333333;
+            --text-light: #666666;
+            --border-color: #e0e0e0;
+            --transition-speed: 0.3s;
+        }
+
+        /* ===== Reset & Base Styles ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--text-gray);
+            background-color: var(--white);
+        }
+
+        a {
+            color: var(--green);
+            text-decoration: none;
+            transition: all var(--transition-speed);
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        /* ===== Header ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--white);
+            border: 1px solid var(--black);
+            border-radius: 50px;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            width: 140px;
+            height: auto;
+        }
+
+        .back-link {
+            padding: 15px 30px;
+            font-size: 16px;
+            text-transform: lowercase;
+            border-radius: 25px;
+            background-image: linear-gradient(to right, var(--green), var(--yellowish));
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(127, 255, 158, 0.3);
+        }
+
+        /* ===== Content ===== */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 150px 20px 80px;
+        }
+
+        .page-title {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 300;
+            text-transform: lowercase;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: lowercase;
+        }
+
+        .section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 30px 0 15px;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .section ul, .section ol {
+            margin: 20px 0 20px 30px;
+        }
+
+        .section li {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background-color: #f8f8f8;
+            border-left: 4px solid var(--green);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background-color: #fff8e1;
+            border-left: 4px solid var(--yellowish);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box p {
+            margin-bottom: 10px;
+        }
+
+        .warning-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .footer-about h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-about p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .footer-links h4 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: var(--green);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .content {
+                padding: 130px 20px 60px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Eclectic Dabbler Integrations" class="logo-image" />
+                </div>
+                <a href="index.html" class="back-link">back to home</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="content">
+        <h1 class="page-title">Terms of Service</h1>
+        <p class="last-updated">Last Updated: February 4, 2025</p>
+
+        <div class="highlight-box">
+            <p><strong>In Brief:</strong> These terms govern your use of our automation and integration services. By engaging our services, you agree to these terms. We'll build what you request, you'll pay for it, and we'll both act professionally and in good faith.</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Agreement to Terms</h2>
+            <p>
+                These Terms of Service ("Terms") constitute a legally binding agreement between you ("Client," "you," or "your") 
+                and Eclectic Dabbler Integrations ("Company," "we," "us," or "our"). By accessing our website, engaging our 
+                services, or executing a service agreement with us, you agree to be bound by these Terms.
+            </p>
+            <p>
+                If you do not agree to these Terms, you may not access or use our services. If you are entering into these 
+                Terms on behalf of a company or other legal entity, you represent that you have the authority to bind such 
+                entity to these Terms.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>2. Services Description</h2>
+            <p>
+                Eclectic Dabbler Integrations provides custom automation and integration services, including but not limited to:
+            </p>
+            <ul>
+                <li>Workflow automation design and implementation</li>
+                <li>API integration between business applications and platforms</li>
+                <li>Custom scripting and automation development</li>
+                <li>System integration consulting and strategy</li>
+                <li>Ongoing maintenance and support for implemented solutions</li>
+            </ul>
+            <p>
+                Specific services, deliverables, timelines, and fees will be outlined in individual project agreements, 
+                statements of work, or proposals ("Project Agreement") that reference and incorporate these Terms.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>3. Project Engagement Process</h2>
+            
+            <h3>3.1 Discovery and Proposal</h3>
+            <p>
+                Following your initial inquiry, we will conduct a discovery process to understand your requirements. 
+                We will then provide a proposal outlining the scope, timeline, deliverables, and fees.
+            </p>
+
+            <h3>3.2 Project Agreement</h3>
+            <p>
+                Once you accept our proposal, we will execute a Project Agreement detailing the specific terms of 
+                engagement. Work will commence upon receipt of any required deposits and execution of the agreement.
+            </p>
+
+            <h3>3.3 Changes to Scope</h3>
+            <p>
+                Any changes to the agreed scope of work must be documented in writing and may result in adjustments 
+                to fees and timelines. We will provide notice of any such changes before proceeding with additional work.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>4. Client Responsibilities</h2>
+            <p>To ensure successful project delivery, you agree to:</p>
+            <ul>
+                <li>Provide timely access to necessary systems, platforms, accounts, and documentation</li>
+                <li>Provide accurate and complete information about your business processes and requirements</li>
+                <li>Designate a primary point of contact for project communications</li>
+                <li>Respond to requests for information, feedback, and approvals within agreed timeframes</li>
+                <li>Test and validate deliverables according to agreed acceptance criteria</li>
+                <li>Maintain necessary licenses and subscriptions for third-party platforms being integrated</li>
+                <li>Inform us of any changes to systems, platforms, or business requirements that may affect the project</li>
+                <li>Ensure that your use of our services complies with all applicable laws and regulations</li>
+            </ul>
+            <p>
+                Delays caused by failure to fulfill these responsibilities may result in project timeline extensions 
+                and potential fee adjustments.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>5. Fees and Payment</h2>
+            
+            <h3>5.1 Pricing</h3>
+            <p>
+                Fees for services will be specified in the Project Agreement and may be structured as:
+            </p>
+            <ul>
+                <li>Fixed project fees</li>
+                <li>Hourly rates for time and materials engagements</li>
+                <li>Monthly retainers for ongoing support and maintenance</li>
+                <li>Combinations of the above</li>
+            </ul>
+
+            <h3>5.2 Payment Terms</h3>
+            <p>
+                Unless otherwise specified in the Project Agreement:
+            </p>
+            <ul>
+                <li>A deposit of 50% of the project fee is due upon execution of the Project Agreement</li>
+                <li>Invoices are due within 15 days of the invoice date</li>
+                <li>Late payments are subject to a 1.5% monthly interest charge (18% annually)</li>
+                <li>For retainer agreements, payment is due in advance of each service period</li>
+            </ul>
+
+            <h3>5.3 Expenses</h3>
+            <p>
+                Unless included in the project fee, you will be responsible for reimbursing reasonable expenses 
+                incurred in connection with the project, including third-party software licenses, platform fees, 
+                or specialized tools required for implementation.
+            </p>
+
+            <h3>5.4 Suspension of Services</h3>
+            <p>
+                We reserve the right to suspend services if payment becomes 30 days overdue. Suspension does not 
+                relieve you of payment obligations for services already rendered.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>6. Intellectual Property</h2>
+            
+            <h3>6.1 Client Data and Systems</h3>
+            <p>
+                You retain all rights, title, and interest in your data, business processes, and existing systems. 
+                We claim no ownership over your proprietary information.
+            </p>
+
+            <h3>6.2 Custom Deliverables</h3>
+            <p>
+                Upon full payment of all fees, you will own the custom code, configurations, and documentation 
+                created specifically for your project ("Custom Deliverables"). We retain the right to use general 
+                concepts, techniques, and know-how developed during the project in our future work.
+            </p>
+
+            <h3>6.3 Pre-Existing Materials</h3>
+            <p>
+                We retain all rights to our pre-existing code libraries, frameworks, methodologies, and tools 
+                ("Pre-Existing Materials") that may be incorporated into your project. You receive a non-exclusive, 
+                perpetual license to use such materials as part of the delivered solution.
+            </p>
+
+            <h3>6.4 Third-Party Components</h3>
+            <p>
+                Solutions may incorporate third-party platforms, APIs, libraries, or components subject to separate 
+                licenses. You are responsible for complying with applicable third-party license terms.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>7. Confidentiality</h2>
+            <p>
+                Both parties agree to maintain the confidentiality of any proprietary or confidential information 
+                disclosed during the course of engagement, including:
+            </p>
+            <ul>
+                <li>Business processes, strategies, and operational information</li>
+                <li>Technical specifications, code, and system architectures</li>
+                <li>Financial information and pricing</li>
+                <li>Customer data and personal information</li>
+            </ul>
+            <p>
+                This obligation survives termination of the engagement and does not apply to information that: 
+                (a) is or becomes publicly available through no fault of the receiving party; (b) was rightfully 
+                in the receiving party's possession before disclosure; (c) is independently developed; or (d) must 
+                be disclosed by law.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>8. Data Protection and Privacy</h2>
+            <p>
+                Our handling of personal information is governed by our <a href="privacy-policy.html">Privacy Policy</a>. 
+                In the course of providing services, we may have access to personal data for which you are the data 
+                controller. In such cases:
+            </p>
+            <ul>
+                <li>We act as a data processor on your behalf</li>
+                <li>We process data only as necessary to provide the services</li>
+                <li>We implement appropriate security measures to protect data</li>
+                <li>We assist you in complying with your data protection obligations</li>
+                <li>We delete or return data upon termination, unless legally required to retain it</li>
+            </ul>
+            <p>
+                You represent that you have obtained all necessary consents and have the legal right to share 
+                any personal data with us for the purposes of the engagement.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>9. Warranties and Disclaimers</h2>
+            
+            <h3>9.1 Our Warranties</h3>
+            <p>We warrant that:</p>
+            <ul>
+                <li>Services will be performed in a professional and workmanlike manner</li>
+                <li>Deliverables will substantially conform to specifications in the Project Agreement</li>
+                <li>We have the right to provide the services and deliverables</li>
+                <li>Our work will not infringe third-party intellectual property rights</li>
+            </ul>
+
+            <h3>9.2 Remedy for Breach</h3>
+            <p>
+                If deliverables do not conform to specifications, we will re-perform the services at no additional 
+                charge, provided you notify us within 30 days of delivery. This is your sole remedy for breach of 
+                our warranties.
+            </p>
+
+            <h3>9.3 Disclaimers</h3>
+            <div class="warning-box">
+                <p>
+                    <strong>EXCEPT AS EXPRESSLY PROVIDED IN THESE TERMS, SERVICES AND DELIVERABLES ARE PROVIDED "AS IS" 
+                    WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF 
+                    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</strong>
+                </p>
+                <p>
+                    WE DO NOT WARRANT THAT SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DELIVERABLES WILL 
+                    MEET ALL YOUR REQUIREMENTS OR EXPECTATIONS. WE ARE NOT RESPONSIBLE FOR ISSUES CAUSED BY THIRD-PARTY 
+                    PLATFORMS, CHANGES TO APIS, OR FACTORS OUTSIDE OUR REASONABLE CONTROL.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>10. Limitation of Liability</h2>
+            <div class="warning-box">
+                <p>
+                    <strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</strong>
+                </p>
+                <p>
+                    IN NO EVENT WILL WE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE 
+                    DAMAGES, INCLUDING LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, ARISING OUT 
+                    OF OR RELATING TO YOUR USE OF OR INABILITY TO USE THE SERVICES.
+                </p>
+                <p>
+                    OUR TOTAL LIABILITY ARISING OUT OF OR RELATING TO THESE TERMS OR ANY PROJECT AGREEMENT WILL NOT 
+                    EXCEED THE TOTAL FEES PAID BY YOU UNDER THE APPLICABLE PROJECT AGREEMENT IN THE 12 MONTHS PRECEDING 
+                    THE CLAIM.
+                </p>
+                <p>
+                    THESE LIMITATIONS APPLY REGARDLESS OF THE LEGAL THEORY ON WHICH THE CLAIM IS BASED, WHETHER CONTRACT, 
+                    TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY 
+                    OF SUCH DAMAGES.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>11. Indemnification</h2>
+            <p>
+                You agree to indemnify, defend, and hold harmless Eclectic Dabbler Integrations and its officers, 
+                employees, and contractors from any claims, damages, losses, liabilities, and expenses (including 
+                reasonable attorneys' fees) arising from:
+            </p>
+            <ul>
+                <li>Your use of the services or deliverables</li>
+                <li>Your breach of these Terms or any Project Agreement</li>
+                <li>Your violation of any law or third-party rights</li>
+                <li>Content, data, or materials you provide to us</li>
+            </ul>
+            <p>
+                We will notify you of any such claim and cooperate with you in the defense. We reserve the right 
+                to assume exclusive control of the defense at our expense.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>12. Term and Termination</h2>
+            
+            <h3>12.1 Project Term</h3>
+            <p>
+                Each project engagement will continue until completion of the deliverables or until terminated 
+                in accordance with these Terms or the Project Agreement.
+            </p>
+
+            <h3>12.2 Termination for Convenience</h3>
+            <p>
+                Either party may terminate a project engagement for any reason upon 15 days' written notice. 
+                Upon termination, you will pay for all work completed and expenses incurred up to the termination date.
+            </p>
+
+            <h3>12.3 Termination for Cause</h3>
+            <p>
+                Either party may terminate immediately if the other party: (a) materially breaches these Terms 
+                and fails to cure within 10 days of written notice; (b) becomes insolvent or subject to bankruptcy 
+                proceedings; or (c) ceases business operations.
+            </p>
+
+            <h3>12.4 Effect of Termination</h3>
+            <p>
+                Upon termination:
+            </p>
+            <ul>
+                <li>All outstanding invoices become immediately due</li>
+                <li>We will deliver all completed work product</li>
+                <li>We will return or destroy your confidential information (unless legally required to retain)</li>
+                <li>You will return or destroy our confidential information</li>
+                <li>Sections relating to payment, intellectual property, confidentiality, warranties, limitations of liability, and indemnification survive termination</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>13. Third-Party Platforms and Services</h2>
+            <p>
+                Our services often involve integrating third-party platforms, APIs, and services. You acknowledge that:
+            </p>
+            <ul>
+                <li>We do not control third-party platforms and are not responsible for their availability, performance, or changes</li>
+                <li>Changes to third-party APIs, terms of service, or functionality may affect our deliverables</li>
+                <li>Additional fees may apply if significant rework is required due to third-party changes</li>
+                <li>You are responsible for obtaining and maintaining necessary licenses and permissions for third-party services</li>
+                <li>Your use of third-party services is subject to their respective terms of service</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>14. Force Majeure</h2>
+            <p>
+                Neither party will be liable for delays or failures in performance resulting from circumstances 
+                beyond their reasonable control, including acts of God, natural disasters, war, terrorism, labor 
+                disputes, governmental actions, internet or utility failures, or pandemics. Performance will be 
+                suspended during the period of such circumstances, and the affected party will use reasonable 
+                efforts to mitigate the effects.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>15. Independent Contractor</h2>
+            <p>
+                We are an independent contractor, not an employee, agent, partner, or joint venture of yours. 
+                We retain sole control over the manner and means of performing services, subject to delivering 
+                the agreed deliverables. Nothing in these Terms creates an employment, agency, partnership, or 
+                joint venture relationship.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>16. Assignment</h2>
+            <p>
+                You may not assign or transfer these Terms or any Project Agreement without our prior written consent. 
+                We may assign our rights and obligations to an affiliate or in connection with a merger, acquisition, 
+                or sale of assets. Any attempted assignment in violation of this section is void.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>17. Dispute Resolution</h2>
+            
+            <h3>17.1 Informal Resolution</h3>
+            <p>
+                Before initiating any formal proceeding, the parties agree to attempt to resolve disputes through 
+                good faith negotiation for at least 30 days.
+            </p>
+
+            <h3>17.2 Governing Law</h3>
+            <p>
+                These Terms are governed by the laws of [Your State/Jurisdiction], without regard to conflict of law principles.
+            </p>
+
+            <h3>17.3 Jurisdiction and Venue</h3>
+            <p>
+                Any legal action arising from these Terms must be brought in the state or federal courts located in 
+                [Your County/State], and both parties consent to the exclusive jurisdiction and venue of such courts.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>18. General Provisions</h2>
+            
+            <h3>18.1 Entire Agreement</h3>
+            <p>
+                These Terms, together with any Project Agreement and incorporated documents, constitute the entire 
+                agreement between the parties and supersede all prior understandings and agreements, whether written 
+                or oral.
+            </p>
+
+            <h3>18.2 Amendments</h3>
+            <p>
+                We may update these Terms from time to time. Material changes will be communicated via email or 
+                prominent notice on our website. Continued use of services after changes constitutes acceptance. 
+                Project Agreements may only be amended by written agreement signed by both parties.
+            </p>
+
+            <h3>18.3 Severability</h3>
+            <p>
+                If any provision of these Terms is found to be unenforceable, the remaining provisions will remain 
+                in full force and effect, and the unenforceable provision will be reformed to be enforceable while 
+                reflecting the parties' intent.
+            </p>
+
+            <h3>18.4 Waiver</h3>
+            <p>
+                Failure to enforce any provision of these Terms does not constitute a waiver of that provision or 
+                any other provision. Any waiver must be in writing and signed by the waiving party.
+            </p>
+
+            <h3>18.5 Notices</h3>
+            <p>
+                Notices under these Terms must be in writing and sent to the addresses specified in the Project 
+                Agreement or to the email addresses on file. Notices are deemed received when delivered by email, 
+                courier, or certified mail.
+            </p>
+
+            <h3>18.6 Headings</h3>
+            <p>
+                Section headings are for convenience only and do not affect interpretation of these Terms.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>19. Questions and Contact</h2>
+            <p>
+                If you have questions about these Terms or wish to discuss a project engagement, please contact us at:
+            </p>
+            <div class="highlight-box">
+                <p><strong>Eclectic Dabbler Integrations</strong></p>
+                <p>Email: legal@eclecticdabbler.com</p>
+                <p>Or use our <a href="index.html#contact">contact form</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Eclectic Dabbler Integrations</h3>
+                    <p>
+                        Custom automation solutions that connect your business tools 
+                        and eliminate repetitive work. We build reliable, scalable 
+                        integrations tailored to your specific needs.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#process">Process</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eclectic Dabbler Integrations. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
