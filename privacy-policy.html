@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Eclectic Dabbler Integrations</title>
+    
+    <!-- 
+        Eclectic Dabbler Integrations Privacy Policy
+        Version: 2025-02-04
+    -->
+    
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --green: #7eff9e;
+            --yellowish: #f9dc4a;
+            --text-gray: #333333;
+            --text-light: #666666;
+            --border-color: #e0e0e0;
+            --transition-speed: 0.3s;
+        }
+
+        /* ===== Reset & Base Styles ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--text-gray);
+            background-color: var(--white);
+        }
+
+        a {
+            color: var(--green);
+            text-decoration: none;
+            transition: all var(--transition-speed);
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        /* ===== Header ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--white);
+            border: 1px solid var(--black);
+            border-radius: 50px;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            width: 140px;
+            height: auto;
+        }
+
+        .back-link {
+            padding: 15px 30px;
+            font-size: 16px;
+            text-transform: lowercase;
+            border-radius: 25px;
+            background-image: linear-gradient(to right, var(--green), var(--yellowish));
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(127, 255, 158, 0.3);
+        }
+
+        /* ===== Content ===== */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 150px 20px 80px;
+        }
+
+        .page-title {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 300;
+            text-transform: lowercase;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: lowercase;
+        }
+
+        .section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 30px 0 15px;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .section ul, .section ol {
+            margin: 20px 0 20px 30px;
+        }
+
+        .section li {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background-color: #f8f8f8;
+            border-left: 4px solid var(--green);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .footer-about h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-about p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .footer-links h4 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: var(--green);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .content {
+                padding: 130px 20px 60px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Eclectic Dabbler Integrations" class="logo-image" />
+                </div>
+                <a href="index.html" class="back-link">back to home</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="content">
+        <h1 class="page-title">Privacy Policy</h1>
+        <p class="last-updated">Last Updated: February 4, 2025</p>
+
+        <div class="highlight-box">
+            <p><strong>In Brief:</strong> We respect your privacy. We collect only the information necessary to provide our services, never sell your data, and are transparent about how we use and protect your information.</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Introduction</h2>
+            <p>
+                Eclectic Dabbler Integrations ("we," "us," or "our") is committed to protecting your privacy. 
+                This Privacy Policy explains how we collect, use, disclose, and safeguard your information when 
+                you visit our website or use our services.
+            </p>
+            <p>
+                By using our services, you agree to the collection and use of information in accordance with this policy. 
+                If you do not agree with our policies and practices, please do not use our services.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>2. Information We Collect</h2>
+            
+            <h3>2.1 Information You Provide</h3>
+            <p>We collect information that you voluntarily provide to us, including:</p>
+            <ul>
+                <li><strong>Contact Information:</strong> Name, email address, phone number, company name</li>
+                <li><strong>Project Information:</strong> Details about your automation needs, business processes, and technical requirements</li>
+                <li><strong>Communication Records:</strong> Content of messages, emails, and other communications with us</li>
+                <li><strong>Payment Information:</strong> Billing details and transaction history (processed through third-party payment providers)</li>
+            </ul>
+
+            <h3>2.2 Information Collected Automatically</h3>
+            <p>When you visit our website, we may automatically collect:</p>
+            <ul>
+                <li><strong>Log Data:</strong> IP address, browser type, operating system, referring URLs, pages viewed, and access times</li>
+                <li><strong>Cookies and Tracking:</strong> We use cookies and similar tracking technologies to analyze trends and improve user experience</li>
+                <li><strong>Device Information:</strong> Device type, unique device identifiers, and mobile network information</li>
+            </ul>
+
+            <h3>2.3 Information from Third Parties</h3>
+            <p>
+                When we build integrations for you, we may receive access to data from your connected platforms 
+                (such as CRM systems, project management tools, or communication platforms) solely for the purpose 
+                of implementing and maintaining your automations.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the information we collect to:</p>
+            <ul>
+                <li>Provide, maintain, and improve our automation and integration services</li>
+                <li>Communicate with you about projects, updates, and support</li>
+                <li>Process payments and fulfill contractual obligations</li>
+                <li>Develop and implement custom automation solutions tailored to your needs</li>
+                <li>Monitor and analyze usage patterns to enhance service quality</li>
+                <li>Detect, prevent, and address technical issues or security vulnerabilities</li>
+                <li>Comply with legal obligations and enforce our terms of service</li>
+                <li>Send occasional marketing communications (with your consent, and you can opt out at any time)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Data Access in Automation Services</h2>
+            <div class="highlight-box">
+                <p>
+                    <strong>Important:</strong> When we build automations that connect your business tools, 
+                    we require access to certain data within those systems. This access is:
+                </p>
+            </div>
+            <ul>
+                <li><strong>Necessary:</strong> Required only to implement and maintain your requested automations</li>
+                <li><strong>Limited:</strong> Restricted to the minimum permissions needed for functionality</li>
+                <li><strong>Temporary:</strong> Active only during implementation, testing, and maintenance periods</li>
+                <li><strong>Confidential:</strong> Treated with the same security standards as our own proprietary data</li>
+                <li><strong>Non-retained:</strong> Not stored on our systems unless specifically required for the automation's operation</li>
+            </ul>
+            <p>
+                You maintain full control over the data in your connected systems. We never claim ownership 
+                of your data and will delete or return any data upon request or contract termination.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>5. Information Sharing and Disclosure</h2>
+            <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+            
+            <h3>5.1 Service Providers</h3>
+            <p>
+                We may share information with trusted third-party vendors who assist us in operating our business, 
+                such as hosting providers, payment processors, and communication tools. These parties are 
+                contractually obligated to protect your information.
+            </p>
+
+            <h3>5.2 Platform Integrations</h3>
+            <p>
+                When implementing your automations, we transmit data between your chosen platforms according to 
+                your specifications. This is essential to the service we provide.
+            </p>
+
+            <h3>5.3 Legal Requirements</h3>
+            <p>We may disclose information if required by law or in response to valid legal processes, such as:</p>
+            <ul>
+                <li>Subpoenas, court orders, or other legal demands</li>
+                <li>Compliance with regulatory obligations</li>
+                <li>Protection of our rights, property, or safety</li>
+                <li>Prevention of fraud or illegal activity</li>
+            </ul>
+
+            <h3>5.4 Business Transfers</h3>
+            <p>
+                If we undergo a merger, acquisition, or sale of assets, your information may be transferred 
+                as part of that transaction. We will notify you of any such change.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>6. Data Security</h2>
+            <p>
+                We implement appropriate technical and organizational measures to protect your information 
+                against unauthorized access, alteration, disclosure, or destruction. These measures include:
+            </p>
+            <ul>
+                <li>Encryption of data in transit and at rest</li>
+                <li>Secure authentication and access controls</li>
+                <li>Regular security audits and vulnerability assessments</li>
+                <li>Employee training on data protection and confidentiality</li>
+                <li>Incident response procedures for potential security breaches</li>
+            </ul>
+            <p>
+                However, no method of transmission over the internet or electronic storage is 100% secure. 
+                While we strive to use commercially acceptable means to protect your information, we cannot 
+                guarantee absolute security.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>7. Data Retention</h2>
+            <p>
+                We retain your information for as long as necessary to fulfill the purposes outlined in this 
+                Privacy Policy, unless a longer retention period is required or permitted by law. Factors 
+                affecting retention periods include:
+            </p>
+            <ul>
+                <li>Duration of our business relationship</li>
+                <li>Legal or regulatory requirements</li>
+                <li>Dispute resolution needs</li>
+                <li>Contract terms and ongoing automation services</li>
+            </ul>
+            <p>
+                When information is no longer needed, we will securely delete or anonymize it.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>8. Your Rights and Choices</h2>
+            <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
+                <li><strong>Correction:</strong> Request that we correct inaccurate or incomplete information</li>
+                <li><strong>Deletion:</strong> Request that we delete your personal information (subject to legal obligations)</li>
+                <li><strong>Portability:</strong> Request a copy of your data in a structured, machine-readable format</li>
+                <li><strong>Restriction:</strong> Request that we limit how we use your information</li>
+                <li><strong>Objection:</strong> Object to our processing of your information for certain purposes</li>
+                <li><strong>Opt-out:</strong> Unsubscribe from marketing communications at any time</li>
+                <li><strong>Revoke Consent:</strong> Withdraw consent where processing is based on consent</li>
+            </ul>
+            <p>
+                To exercise any of these rights, please contact us using the information provided below. 
+                We will respond to your request within a reasonable timeframe.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>9. Cookies and Tracking Technologies</h2>
+            <p>
+                We use cookies and similar tracking technologies to enhance your experience on our website. 
+                Types of cookies we use include:
+            </p>
+            <ul>
+                <li><strong>Essential Cookies:</strong> Required for basic website functionality</li>
+                <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with our site</li>
+                <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
+            </ul>
+            <p>
+                You can control cookie preferences through your browser settings. Note that disabling certain 
+                cookies may affect website functionality.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>10. Third-Party Links</h2>
+            <p>
+                Our website may contain links to third-party websites or services. We are not responsible for 
+                the privacy practices of these external sites. We encourage you to review their privacy policies 
+                before providing any personal information.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>11. Children's Privacy</h2>
+            <p>
+                Our services are not directed to individuals under the age of 18. We do not knowingly collect 
+                personal information from children. If we become aware that a child has provided us with personal 
+                information, we will take steps to delete such information.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>12. International Data Transfers</h2>
+            <p>
+                Your information may be transferred to and maintained on servers located outside of your jurisdiction, 
+                where data protection laws may differ. By using our services, you consent to the transfer of your 
+                information to these locations. We will ensure that appropriate safeguards are in place to protect 
+                your information in accordance with this Privacy Policy.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>13. Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time to reflect changes in our practices or legal 
+                requirements. We will notify you of any material changes by:
+            </p>
+            <ul>
+                <li>Posting the updated policy on our website with a new "Last Updated" date</li>
+                <li>Sending an email notification to registered users</li>
+                <li>Displaying a prominent notice on our website</li>
+            </ul>
+            <p>
+                Your continued use of our services after such modifications constitutes acceptance of the updated policy.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>14. Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, 
+                please contact us at:
+            </p>
+            <div class="highlight-box">
+                <p><strong>Eclectic Dabbler Integrations</strong></p>
+                <p>Email: privacy@eclecticdabbler.com</p>
+                <p>Or use our <a href="index.html#contact">contact form</a></p>
+            </div>
+            <p>
+                We take privacy concerns seriously and will respond to your inquiry within 30 days.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Eclectic Dabbler Integrations</h3>
+                    <p>
+                        Custom automation solutions that connect your business tools 
+                        and eliminate repetitive work. We build reliable, scalable 
+                        integrations tailored to your specific needs.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#process">Process</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eclectic Dabbler Integrations. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
