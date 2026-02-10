@@ -16,10 +16,10 @@
         :root {
             --black: #000000;
             --white: #ffffff;
-            --green: #7eff9e;
-            --yellowish: #f9dc4a;
-            --purple-start: #667eea;
-            --purple-end: #764ba2;
+            --shadow-red: #5c1a1a;
+            --body: #c52625;
+            --rose-gold: #f1b3a0;
+            --end: #c32d27;
             --text-gray: #333333;
             --border-color: #000000;
             --transition-speed: 0.3s;
@@ -128,7 +128,7 @@
 
         .menu-item:hover,
         .menu-item.active {
-            background-image: linear-gradient(to right, var(--green), var(--yellowish));
+            background-image: linear-gradient(to right, var(--body), var(--end));
         }
 
         .menu-button {
@@ -194,7 +194,7 @@
 
         .btn-primary {
             display: inline-block;
-            background-image: linear-gradient(to right, var(--green), var(--yellowish));
+            background-image: linear-gradient(to right, var(--body), var(--end));
             color: var(--black);
             padding: 20px 40px;
             border-radius: 50px;
@@ -302,7 +302,7 @@
             justify-content: center;
             width: 80px;
             height: 80px;
-            background-image: linear-gradient(135deg, var(--green), var(--yellowish));
+            background-image: linear-gradient(135deg, var(--body), var(--end));
             border-radius: 50%;
             font-size: 32px;
             font-weight: bold;
@@ -437,7 +437,7 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: var(--green);
+            border-color: var(--body);
             box-shadow: 0 0 0 3px rgba(127, 255, 158, 0.1);
         }
 
@@ -493,7 +493,7 @@
         }
 
         .footer-links a:hover {
-            color: var(--green);
+            color: var(--body);
         }
 
         .footer-bottom {
